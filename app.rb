@@ -11,3 +11,6 @@ BetterErrors::Middleware.allow_ip!('0.0.0.0/0.0.0.0')
 get("/") do
   erb(:homepage)
 end
+
+post("/search") do
+end

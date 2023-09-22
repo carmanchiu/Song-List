@@ -13,4 +13,5 @@ get("/") do
 end
 
 post("/search") do
+  erb(:search_results)
 end

@@ -1,0 +1,10 @@
+<h1>Songs by <%= @artist_name %></h1>
+
+<ul>
+  <% @data_hash.each do |song| %>
+    <% song_title = song.fetch("title") %>
+    <li>
+      <%= song_title %>
+    </li>
+  <% end %>
+</ul>

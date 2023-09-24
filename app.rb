@@ -33,6 +33,6 @@ post("/search") do
   @parsed_response = JSON.parse(@raw_response)
 
   @data_hash = @parsed_response.dig("data")
-
+  
   erb(:search_results)
 end

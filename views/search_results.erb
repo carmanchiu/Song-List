@@ -1,11 +1,16 @@
+<!-- <%= @debug %> -->
+
 <h1>Songs by <%= @artist_name %></h1>
 
 <ul>
   <% @data_hash.each do |song| %>
-    <% song_title = song.fetch("title") %>
-    <li>
-      <%= song_title %>
-    </li>
+    <% artist = song.dig("artist", "name") %>
+    <% if artist == @artist_name %>
+      <% song_title = song.fetch("title") %>
+      <li>
+        <%= song_title %>
+      </li>
+      <% end %>
   <% end %>
 </ul>
 

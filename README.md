@@ -1,18 +1,6 @@
-# sinatra-template
+# Song List
 
-Use this repository to create new Sinatra apps. 
+This website allows you to search up an artist and see a limited list of their songs.
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+API used:
+  - Deezer
